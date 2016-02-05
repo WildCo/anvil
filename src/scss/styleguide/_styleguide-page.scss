@@ -1,0 +1,44 @@
+body.styleguide {
+    font-size: rem-calc(18);
+    background-color: $sg-off-white;
+}
+
+h1.sg-h1,
+h2.sg-h2,
+h3.sg-h3,
+h4.sg-h4,
+h5.sg-h5,
+h6.sg-h6 {
+    color: $sg-dark-gray;
+}
+
+h3.sg-h3 {
+    padding: 15px 0;
+    font-size: rem-calc(18);
+    font-weight: bold;
+}
+
+h4.sg-h4 {
+    font-size: rem-calc(16);
+    font-weight: bold;
+    color: lighten($sg-medium-gray, 15%);
+}
+
+header {
+    padding: 50px 0;
+    background-color: $sg-white;
+}
+
+.sg-page,
+.sg-component,
+.sg-layout {
+    padding: 50px 0;
+}
+
+.sg-component-sub:not(:last-child),
+.sg-layout-sub:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.sg-page > .sg-component:first-child,
+.sg-page > .sg-layout:first-child { padding: 0; }

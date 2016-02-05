@@ -1,0 +1,37 @@
+.sg-color-cards {
+    li {
+        .sg-color-card {
+            padding: 0;
+            // border: solid 1px $sg-medium-gray;
+            box-shadow: $sg-box-shadow;
+            @include border-top-radius(3px);
+            @include border-bottom-radius(3px);
+
+            @media #{$small-only} {}
+            @media #{$medium-only} {}
+        }
+    }
+    .sg-color-card-color {
+        height: rem-calc(100);
+        @include border-top-radius(3px);
+    }
+    .sg-color-card-values {
+        padding: 5px 10px;
+        background-color: $sg-white;
+        font-size: rem-calc(14);
+        .sg-value-hex {
+            display: block;
+            &:before {
+                content: '#';
+                color: $sg-teal;
+            }
+        }
+        .sg-value-var {
+            display: block;
+            &:before {
+                content: '$';
+                color: $sg-teal;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+////////////////////////////////////////
+// colors
+////////////////////////////////////////
+
+// Color Classes
+.brand-color {
+    &-primary-blue { background-color: brand-color(primary-blue); }
+}
+.ui-color {
+    &-dark-blue { background-color: ui-color(dark-blue); }
+    &-light-blue { background-color: ui-color(light-blue); }
+    &-white { background-color: ui-color(white-white); }
+    &-off-white { background-color: ui-color(off-white); }
+    &-dark-gray { background-color: ui-color(dark-gray); }
+    &-darkest-gray { background-color: ui-color(darkest-gray); }
+    &-black { background-color: ui-color(black-black); }
+    &-green { background-color: ui-color(green-green); }
+}

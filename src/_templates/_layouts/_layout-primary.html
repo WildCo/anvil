@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Language" content="en">
+        <title>{{ company_name }} {{ app_name }}{% block page_title %}{% endblock %}</title>
+        <link rel="stylesheet" href="assets/css/styleguide.css" media="screen" title="no title" charset="utf-8">
+        {# All the favicons #}
+        {% include "_partials/_header-icons.html" %}
+    </head>
+    <body class="styleguide">
+        <header>
+            <div class="row">
+                <div class="small-12 columns">
+                    <h1>{{ company_name }} {{ app_name }}</h1>
+                </div>
+            </div>
+        </header>
+        {% if nav_main | length(0) %}
+            {% include "_partials/_nav.html" %}
+        {% endif %}
+
+        {% block main_content %}
+        {% endblock %}
+
+    <!-- adding jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- adding custom js -->
+    <script src="assets/js/app.min.js"></script>
+    </body>
+</html>

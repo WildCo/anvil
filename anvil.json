@@ -1,0 +1,81 @@
+{
+  "root": "./",
+  "assets": {
+    "base": "src/",
+    "dest": "build/assets/"
+  },
+  "build": {
+      "js": {
+        "base"  : "src/js/",
+        "files" : [
+          "src/js/**/*.js"
+        ],
+        "dest"  : "build/assets/js/"
+      },
+      "scss": {
+        "base" : "src/scss/",
+        "files": [
+          "src/scss/build.scss",
+          "src/scss/_*.scss"
+        ],
+        "dest" : "build/assets/css/"
+      },
+      "fonts": {
+        "base" : "src/fonts/",
+        "files": [
+          "src/fonts/**/*"
+        ],
+        "dest" : "build/assets/fonts/"
+      },
+      "images": {
+        "base" : "src/images/",
+        "files": [
+          "src/images/**/*"
+        ],
+        "dest" : "build/assets/images/"
+      }
+  },
+  "styleguide": {
+    "templates": {
+      "base": "src/_templates/",
+      "files": [
+        "src/_templates/**/*.html"
+      ],
+      "dest": "styleguide/"
+    },
+    "data_path": "./src/_templates/_data/",
+    "files": [
+      "src/_templates/**/*.nunjucks",
+      "src/_templates/**/*.html"
+    ],
+    "scss": {
+      "base" : "src/scss/",
+      "files": [
+        "src/scss/styleguide.scss",
+        "src/scss/*/_*.scss"
+      ],
+      "dest" : "styleguide/assets/css/"
+    },
+    "js": {
+      "base"  : "src/js/",
+      "files" : [
+        "src/js/**/*.js"
+      ],
+      "dest"  : "styleguide/assets/js/"
+    },
+    "fonts": {
+      "base" : "src/fonts/",
+      "files": [
+        "src/fonts/**/*"
+      ],
+      "dest" : "styleguide/assets/fonts/"
+    },
+    "images": {
+      "base" : "src/images/",
+      "files": [
+        "src/images/**/*"
+      ],
+      "dest" : "styleguide/assets/images/"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<nav class="navigation">
+    {# Set up nav items in data file #}
+    {% for nav in nav_main %}
+    <a href="{{ nav.url }}">{{ nav.name }}</a>
+    {% endfor %}
+</nav>

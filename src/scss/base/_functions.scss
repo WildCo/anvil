@@ -1,0 +1,18 @@
+////////////////////////////////////////
+// functions
+////////////////////////////////////////
+
+// rem sizing function
+@function rem($size) {
+    $remSize: $size / 16;
+    @return $remSize * 1rem;
+}
+
+// function to create brand colors
+@function brand-color($key: 'primary-blue') {
+  @return map-get($brand-colors, $key);
+}
+// function to create UI colors
+@function ui-color($key: 'dark-blue') {
+  @return map-get($ui-colors, $key);
+}

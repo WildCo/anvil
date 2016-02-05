@@ -1,0 +1,33 @@
+input[type="text"],
+input[type="password"],
+input[type="url"],
+input[type="email"],
+input[type="search"],
+input[type="number"],
+textarea {
+    border-radius: 6px;
+    box-shadow: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.is-valid {
+        background-color: green;
+        border-color: green;
+    }
+    &.is-error {
+        background-color: red;
+        border-color: red;
+    }
+}
+
+[placeholder] {
+    &::-webkit-input-placeholder {
+        color: gray;
+    }
+    &:focus::-webkit-input-placeholder {
+        transition: opacity 0.2s ease;
+        opacity: 0;
+    }
+}

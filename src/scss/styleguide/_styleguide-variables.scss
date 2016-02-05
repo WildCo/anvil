@@ -1,0 +1,19 @@
+// variables specifically for the styleguide ui
+
+// colors
+// shades of gray
+$sg-white: #ffffff;
+$sg-off-white: #f9f9f9;
+$sg-light-gray: #eceef3;
+$sg-medium-gray: #95a5a6;
+$sg-dark-gray: #2e2e2e;
+
+// blues
+$sg-ocean-blue: #008cba;
+
+// greens
+$sg-sea-green: #66b6ab;
+$sg-teal: #2fb6c6;
+
+// shadows
+$sg-box-shadow: 0px 2px 2px darken($sg-light-gray, 10%);

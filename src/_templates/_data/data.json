@@ -1,0 +1,54 @@
+{
+    "app_name": "Styleguide",
+    "company_name": "Spry",
+    "nav_main": [
+        {
+            "url": "/",
+            "name": "INTRODUCTION"
+        },
+        {
+            "url": "/all-styles.html",
+            "name": "ALL STYLES"
+        },
+        {
+            "url": "/blocks.html",
+            "name": "BLOCKS"
+        }
+    ],
+    "colors_brand": [
+        {
+            "hex": "077dbb",
+            "sass_var": "brand-blue"
+        },
+        {
+            "hex": "fa933b",
+            "sass_var": "brand-orange"
+        },
+        {
+            "hex": "2ecc71",
+            "sass_var": "brand-emerald"
+        },
+        {
+            "hex": "9b59b6",
+            "sass_var": "brand-amethyst"
+        },
+        {
+            "hex": "e74c3c",
+            "sass_var": "brand-red"
+        }
+    ],
+    "colors_ui": [
+        {
+            "hex": "ffffff",
+            "sass_var": "ui-white"
+        },
+        {
+            "hex": "eceef3",
+            "sass_var": "ui-light-gray"
+        },
+        {
+            "hex": "34495e",
+            "sass_var": "asphault"
+        }
+    ]
+}

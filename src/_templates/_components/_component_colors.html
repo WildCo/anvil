@@ -1,0 +1,41 @@
+<section class="sg-component row">
+    <div class="small-12 columns">
+        <h3 class="sg-h3">COLORS</h3>
+    </div>
+    {% if colors_brand | length(0) %}
+    <div class="sg-component-sub small-12 columns">
+        <h4 class="sg-h4">BRAND COLORS</h4>
+        <ul class="sg-color-cards large-block-grid-6 medium-block-grid-3 small-block-grid-1">
+            {% for color in colors_brand %}
+            <li>
+                <div class="sg-color-card">
+                    <div class="sg-color-card-color" style="background-color: #{{ color.hex }}"></div>
+                    <div class="sg-color-card-values">
+                        <span class="sg-value-hex">{{ color.hex }}</span>
+                        <span class="sg-value-var">{{ color.sass_var }}</span>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+    {% if colors_ui | length(0) %}
+    <div class="sg-component-sub small-12 columns">
+        <h4 class="sg-h4">UI COLORS</h4>
+        <ul class="sg-color-cards large-block-grid-6 medium-block-grid-3 small-block-grid-1">
+            {% for color in colors_ui %}
+            <li>
+                <div class="sg-color-card">
+                    <div class="sg-color-card-color" style="background-color: #{{ color.hex }}"></div>
+                    <div class="sg-color-card-values">
+                        <span class="sg-value-hex">{{ color.hex }}</span>
+                        <span class="sg-value-var">{{ color.sass_var }}</span>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+</section>

@@ -1,0 +1,108 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+////////////////////
+// Variables - our custom variables
+////////////////////
+@import "base/variables";
+
+////////////////////
+// Zurb Foundation - global setup and variable overrides.
+////////////////////
+@import "../../node_modules/zurb-foundation-5/scss/foundation/functions";
+// Import Foundatin Settings
+@import "base/settings";
+// Comment out this import if you don't want to use normalize.
+@import "../../node_modules/zurb-foundation-5/scss/normalize";
+// Comment out the imports you don't need below.
+@import "../../node_modules/zurb-foundation-5/scss/foundation/components/grid",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/accordion",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/alert-boxes",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/block-grid",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/breadcrumbs",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/button-groups",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/buttons",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/clearing",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/dropdown",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/dropdown-buttons",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/flex-video",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/forms",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/icon-bar",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/inline-lists",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/joyride",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/keystrokes",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/labels",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/magellan",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/orbit",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/pagination",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/panels",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/pricing-tables",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/progress-bars",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/range-slider",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/reveal",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/side-nav",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/split-buttons",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/sub-nav",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/switches",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/tables",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/tabs",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/thumbs",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/tooltips",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/top-bar",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/type",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/offcanvas",
+        "../../node_modules/zurb-foundation-5/scss/foundation/components/visibility";
+
+////////////////////
+// Bourbon - Mixin library
+////////////////////
+@import "../../node_modules/bourbon/app/assets/stylesheets/bourbon";
+
+////////////////////
+// Base - files to set up configuration
+////////////////////
+@import "base/mixins",
+        "base/common",
+        "base/colors",
+        "base/functions";
+
+////////////////////
+// Components - UI elements and such
+////////////////////
+@import "components/buttons",
+        "components/type",
+        "components/lists",
+        "components/images",
+        "components/icons",
+        "components/forms",
+        "components/tables",
+        "components/panels",
+        "components/flyouts",
+        "components/modal",
+        "components/tabs";
+
+////////////////////
+// Layout - larger pieces of a page
+////////////////////
+@import "blocks/header",
+        "blocks/content-area",
+        "blocks/articles",
+        "blocks/aside",
+        "blocks/footer";
+
+////////////////////
+// Pages - styling for any individual pages
+////////////////////
+@import "pages/user-login",
+        "pages/404",
+        "pages/maintenance";
+
+////////////////////
+// Framework - any custom framework or CMS styling
+////////////////////
+// @import "framework/custom-styles";
+
+////////////////////
+// Vendor support - IE stuff
+////////////////////
+// @import "vendor/ie";
