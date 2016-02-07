@@ -1,8 +1,14 @@
 // Place your mixins here. Feel free to roll your own mixins.
 
 // breakpoints on the fly
-@mixin breakpoint-at($breakpoint) {
+@mixin breakpoint-down($breakpoint) {
     @media only screen and (max-width: $breakpoint + px) { @content; }
+}
+@mixin breakpoint-up($breakpoint) {
+    @media only screen and (min-width: $breakpoint + px) { @content; }
+}
+@mixin breakpoint-between($breakpoint-low, $breakpoint-high) {
+    @media only screen and (min-width: $breakpoint-low + px) and (max-width: $breakpoint-high + px) { @content; }
 }
 
 // Vertical align

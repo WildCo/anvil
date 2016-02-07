@@ -1,13 +1,9 @@
 {
-    "app_name": "Styleguide",
-    "company_name": "Spry",
+    "app_name": "Anvil",
+    "company_name": "Wild Co.",
     "nav_main": [
         {
             "url": "/",
-            "name": "INTRODUCTION"
-        },
-        {
-            "url": "/all-styles.html",
             "name": "ALL STYLES"
         },
         {
