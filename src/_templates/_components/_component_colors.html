@@ -5,9 +5,9 @@
     {% if colors_brand | length(0) %}
     <div class="sg-component-sub small-12 columns">
         <h4 class="sg-h4">BRAND COLORS</h4>
-        <ul class="sg-color-cards large-block-grid-6 medium-block-grid-3 small-block-grid-1">
+        <ul class="sg-color-cards small-up-1 medium-up-3 large-up-6">
             {% for color in colors_brand %}
-            <li>
+            <li class="columns">
                 <div class="sg-color-card">
                     <div class="sg-color-card-color" style="background-color: #{{ color.hex }}"></div>
                     <div class="sg-color-card-values">
@@ -23,9 +23,9 @@
     {% if colors_ui | length(0) %}
     <div class="sg-component-sub small-12 columns">
         <h4 class="sg-h4">UI COLORS</h4>
-        <ul class="sg-color-cards large-block-grid-6 medium-block-grid-3 small-block-grid-1">
+        <ul class="sg-color-cards small-up-1 medium-up-3 large-up-6">
             {% for color in colors_ui %}
-            <li>
+            <li class="columns">
                 <div class="sg-color-card">
                     <div class="sg-color-card-color" style="background-color: #{{ color.hex }}"></div>
                     <div class="sg-color-card-values">
