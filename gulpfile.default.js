@@ -193,3 +193,8 @@ gulp.task('styleguide:watch', ['styleguide', 'serve:styleguide'], function () {
     gulp.watch(config.styleguide.images.files, ['images:styleguide', 'serve:styleguide']);
     gulp.watch(config.styleguide.fonts.files, ['fonts:styleguide', 'serve:styleguide']);
 });
+
+///////////////////////////////////////////////////////
+// Task to build both
+///////////////////////////////////////////////////////
+gulp.task('anvil', ['styleguide', 'build']);
